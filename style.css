@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light_Grey: hsl(217, 12%, 63%);
+  --Medium_Grey: hsl(216, 12%, 54%);
+  --Dark_Blue: hsl(213, 19%, 18%);
+  --Icon_Dark_Blue: rgba(69, 82, 100, 0.603);
+  --Very_Dark_Blue: hsl(216, 12%, 8%);
+  --font_family: 'Overpass', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--White);
+  font-family: var(--font_family);
+  background-color: var(--Very_Dark_Blue);
+}
+.container {
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: var(--Dark_Blue);
+  width: 100%;
+  max-width: 375px;
+  margin: auto;
+  border-radius: 1em;
+}
+.container1 {
+  display: block;
+  padding: 2em;
+}
+.starIcon{
+    padding: 15px;
+    background-color: var(--Icon_Dark_Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    border-radius: 50%;
+}
+.heading{
+    font-size: 1.6em;
+    padding-top: 1em;
+}
+.askFeedback{
+    padding-top: 1em;
+    color: var(--Medium_Grey);
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0;
+}
+input{
+    display: none;
+}
+label{
+    display: flex;
+    background-color: var(--Icon_Dark_Blue);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: var(--Light_Grey);
+    font-size: 1.3em;
+    cursor: pointer;
+}
+label:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+    
+}
+input:checked + label {
+    background-color: var(--Light_Grey);
+    color: var(--White);
+  }
+
+button{
+    margin: auto;
+    width: 100%;
+    color: var(--White);
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    padding: 0.4em;
+
+}
+button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
+.clicked{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+/************************************************** */
+
+
+
+
+.container2{
+    display: none;
+    text-align: center;
+    padding: 1.9em;
+}
+.container2 img{
+    width: 130px;
+}
+.ratingResult{
+    background-color: var(--Dark_Blue);
+    width: 60%;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 40px;
+    margin: 2em auto;
+    color: var(--Orange);
+}
+.appreciate{
+    font-size: 14px;
+    line-height: 23px;
+    color: var(--Medium_Grey);
+    padding-top: 1em;
+}
+
+
+
+
+/* ******************************************** */
+.attribution {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
